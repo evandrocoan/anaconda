@@ -191,7 +191,7 @@ class Checker(threading.Thread):
     def __init__(self, server, delta=5):
         threading.Thread.__init__(self)
         self.server = server
-        self.delta = delta
+        self.delta = 300
         self.daemon = True
         self.die = False
 
