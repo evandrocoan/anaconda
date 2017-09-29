@@ -55,7 +55,7 @@
         This is enabled by default; disable it if you experience slowdowns
         when you switch between projects, and file an issue in GitHub.
     */
-    "auto_python_builder_enabled": true,
+    "auto_python_builder_enabled": false,
 
     /*
         Debug Mode:
@@ -114,8 +114,8 @@
         If complete_all_parameters is true, it will add all the possible
         parameters, if it's false, it will add only required parameters
     */
-    "complete_parameters": false,
-    "complete_all_parameters": false,
+    "complete_parameters": true,
+    "complete_all_parameters": true,
 
     /*
         If you set the following option as true, anaconda will display the
@@ -262,7 +262,7 @@
     "anaconda_linter_persistent": false,
 
     // If true, anaconda draws gutter marks on line with errors.
-    "anaconda_gutter_marks": true,
+    "anaconda_gutter_marks": false,
 
     /*
 
@@ -283,7 +283,7 @@
         If 'squiggly_underline', anaconda will draw a squiggly underline below regions.
         If 'none', anaconda will not draw anything on error lines.
     */
-    "anaconda_linter_mark_style": "outline",
+    "anaconda_linter_mark_style": "squiggly_underline",
 
     /*
         If this is set to false, anaconda will not underline errors.
@@ -327,7 +327,7 @@
     "use_pylint": false,
 
     // Set this to false to turn pep8 checking off completely.
-    "pep8": true,
+    "pep8": false,
 
     /*
         If set, the given file will be used as configuration for pep8.
@@ -655,6 +655,7 @@
 
     	NOTE: Ignoring errors may be dangerous.
      */
+	"swallow_startup_errors": true,
 
      /* Parameters to include after test_command specific to testing scope */
      "test_params": {
@@ -662,7 +663,6 @@
         "current_test": "",
         "project_tests": ""
     },
-	"swallow_startup_errors": false,
 
     /*
         If this is set to true, anaconda will unload plugins that
